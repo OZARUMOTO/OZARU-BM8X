@@ -1,0 +1,37 @@
+# OZARU-BM8X .gitignore
+# Only README.md and OZARU-BM8X.png should ever be pushed
+
+# Hardware files — PCB, schematics, footprints
+hardware/
+*.kicad_pcb
+*.kicad_sch
+*.kicad_pro
+*.kicad_prl
+*.kicad_mod
+*.kicad_wks
+
+# Scripts — Python generators, diagnostics, fixers
+scripts/
+
+# Documentation — BOM, architecture, placement guides
+docs/
+
+# 3D models and rendering
+3d/
+*.step
+*.stp
+*.stl
+*.glb
+*.scad
+
+# Routing sessions
+*.ses
+*.dsn
+
+# DRC reports
+DRC.rpt
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo

@@ -23,6 +23,23 @@
 
 ---
 
+### Competitive Context
+
+| Miner | Chips | Stock TH/s | Watts | J/TH | Cooling |
+|---|---|---|---|---|---|
+| NerdAxe Gaia | 1× BM1373 | 2.4 | 25W | 10.4 | Air |
+| Zyber Blanc | 1× BM1373 | 2.5–3.3 | 20W+ | ~8 | Air |
+| Nexus S1 | 4× BM1373 | 10 | 100W | 10 | Air |
+| THOR P2 | 2× BM1373 | 10 | — | — | Air |
+| BSB B30 | 6× BM1373 | 30 | 360–450W | 12–15 | Air |
+| KBox | 18× BM1370 | 22 | 330W | 15 | Air |
+| **OZARU-BM8X (stock)** | **8× BM1373** | **20** | **~200W** | **~10** | **Water** |
+| **OZARU-BM8X (OC)** | **8× BM1373** | **32–50** | **~450–900W** | **~14–18** | **Water** |
+
+The 8-chip BM1373 topology was chosen over the more common 1- to 6-chip configurations because it hits a sweet spot: more than enough ASICs for meaningful hashrate with a single VRM and controller, while keeping the ASIC cluster small enough (52mm × 26mm) for a single water block. Going to 18 chips (like the KBox) would require a second VRM, larger PCB, and dual water blocks — each of which multiplies the design complexity.
+
+---
+
 ## 1. PCB Architecture
 
 ### Layer Stackup — Why 6 Layers?
